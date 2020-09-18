@@ -32,7 +32,6 @@ time.sleep(2.0)
 while True:
 	# grab the frame from the threaded video stream
 	frame = vs.read()
-	print ("[INFO] entering while loop...")
     # convert the input frame from BGR to RGB then resize it to have
     # a width of 750px (to speedup processing)
 	rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
@@ -61,7 +60,7 @@ while True:
 			# was matched
 			matchedIdxs = [i for (i, b) in enumerate(matches) if b]
 			counts = {}
-			print('counts: ',counts, matchedIdxs)
+			#print('counts: ',counts, matchedIdxs)
 			# loop over the matched indexes and maintain a count for
 			# each recognized face face
 			for i in matchedIdxs:
