@@ -1,9 +1,5 @@
 # import the necessary packages
 import face_recognition
-import dlib
-print (dlib.cuda.get_num_devices())
-print('aaaaaaaaaaa',dlib.DLIB_USE_CUDA)
-
 import argparse
 import pickle
 import cv2
