@@ -7,8 +7,7 @@ Creado sobre el proyecto [face_recognition](https://github.com/ageitgey/face_rec
     $ source env/bin/activate
     $ pip install -r requirements.txt
 
-    Si es posible, compilar DLIB con cuda (sino descomentarlo de requirements.txt). Sobre todo para los ejemplos que crean dataset. 
-    [Compilar dlib con CUDA](https://gist.github.com/flavindias/0d1f8a1e1692572493d7437335705a33) en mi caso, tengo que compilar con gcc7 por lo que añado "cmake .. -DCUDA_HOST_COMPILER=/usr/bin/gcc-7" en el paso 3.1 y "python setup.py install --set CUDA_HOST_COMPILER=/usr/bin/gcc-7" después NO hago el pip install dlib.
+Si es posible, compilar DLIB con cuda (sino descomentarlo de requirements.txt). Sobre todo para los ejemplos que crean dataset. [Compilar dlib con CUDA](https://gist.github.com/flavindias/0d1f8a1e1692572493d7437335705a33) en mi caso, tengo que compilar con gcc7 por lo que añado "cmake .. -DCUDA_HOST_COMPILER=/usr/bin/gcc-7" en el paso 3.1 y "python setup.py install --set CUDA_HOST_COMPILER=/usr/bin/gcc-7" después NO hago el pip install dlib.
 
 
 ### Trabajar con una sola imagen
